@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  background: linear-gradient(to right, #fdf2f8, #fae8ff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calling-card {
+  background: rgba(255, 255, 255, 0.98);
+  padding: 2rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.btn-call {
+  background-color: #ec4899;
+  color: white;
+}
+
+.btn-call:hover {
+  background-color: #db2777;
+}
+
+.result-preview {
+  background-color: #fdf4ff;
+  border-left: 5px solid #ec4899;
+  padding: 1rem;
+  white-space: pre-wrap;
+  font-family: monospace;
+  margin-top: 1rem;
+}
