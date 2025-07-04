@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import 'react-phone-input-2/lib/style.css';
+import PhoneInput from 'react-phone-input-2';
 
 const ContactForm = () => {
     const [name, setName] = useState('');
@@ -17,7 +19,7 @@ const ContactForm = () => {
         const preview = `📞 Call Request Received
 
 👤 Name: ${name}
-📱 Phone: ${phone}
+📱 Phone: +${phone}
 🕒 Time: ${time}
 💬 Reason: ${reason}
 
@@ -50,12 +52,25 @@ We'll get back to you soon!`;
                     </div>
                     <div className="mb-3">
                         <label className="form-label text-pink-700 fw-semibold">📞 Phone Number</label>
-                        <input
-                            className="form-control"
-                            placeholder="+91 9876543210"
-                            value={phone}
-                            onChange={e => setPhone(e.target.value)}
-                        />
+                        <div className="w-full">
+                            <PhoneInput
+                                country={'in'}
+                                value={phone}
+                                onChange={setPhone}
+                                autocompleteSearch={true}
+                                enableSearch={true}
+                                inputClass="form-control !w-full"
+                                // buttonClass="!border-none !bg-transparent"
+                                containerClass="!w-full"
+                                dropdownClass="!rounded-lg !shadow-lg"
+                                inputProps={{
+                                    name: 'phone',
+                                    required: true,
+                                    autoFocus: false,
+                                    placeholder: 'Enter phone number',
+                                }}
+                            />
+                        </div>
                     </div>
                     <div className="mb-3">
                         <label className="form-label text-pink-700 fw-semibold">🕒 Preferred Call Time</label>

@@ -13,8 +13,12 @@
     "@popperjs/core": "^2.11.8",
     "@tailwindcss/vite": "^4.1.11",
     "bootstrap": "^5.3.7",
+    "classnames": "^2.5.1",
+    "flag-icon-css": "^4.1.7",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-input-emoji": "^5.9.0",
+    "react-phone-input-2": "^2.15.1",
     "tailwindcss": "^4.1.11"
   },
   "devDependencies": {

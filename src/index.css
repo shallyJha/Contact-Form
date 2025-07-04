@@ -30,3 +30,34 @@ body {
   font-family: monospace;
   margin-top: 1rem;
 }
+
+.react-phone-input-2 .form-control {
+  /* height: 48px !important; */
+  padding-left: 48px !important;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  box-shadow: none;
+}
+
+.react-phone-input-2 .flag-dropdown {
+  border: none !important;
+  background: transparent !important;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.react-phone-input-2 .selected-flag {
+  height: 48px !important;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+}
+
+.react-phone-input-2 .flag {
+  margin-right: 8px;
+}
+
+.react-phone-input-2 .country-list {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
